@@ -27,9 +27,10 @@ az storage account list --output table
 # Usage function
 usage() {
     echo "Usage: $0 <storage_account> <container_name> <file_path> <blob_name> <file_name>"
-    echo "Example: $0 cloudstoragepractice fileupload-cli /Users/taquanmiddleton/Desktop/clouduploader-cli/temp-repo images file.txt"
+    echo "Example: $0 cloudstoragepractice fileupload-cli <file_path> images <file_name>"
     exit 1
 }
+
 
 # Check if the number of arguments is exactly 5
 if [ $# -ne 5 ]; then
